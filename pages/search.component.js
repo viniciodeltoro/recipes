@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     transform: [{ translate:[0, 0, 1] }]
   },
   movingContainer:{
-    height: 105,
+    //height: 105,
     backgroundColor:'transparent'
   },
   title:{
@@ -45,17 +45,28 @@ const styles = StyleSheet.create({
     borderColor: '#394a4d',
     backgroundColor: '#394a4d',
     color: '#FFFFFF',
-    fontSize: 20,
-    height: 35,
     borderWidth: 1,
-    marginTop: 20,
-    marginBottom: 20,
-    paddingLeft: 10,
-    paddingRight: 10,
+    fontSize: 20,
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
     borderBottomLeftRadius: 5,
-    borderBottomRightRadius: 5
+    borderBottomRightRadius: 5,
+    ...Platform.select({
+      ios: {
+        height: 35,
+        paddingLeft: 10,
+        paddingRight: 10,
+        marginTop: 20,
+        marginBottom: 20,
+      },
+      android: {
+        height: 45,
+        paddingLeft: 5,
+        paddingRight: 5,
+        marginTop: 15,
+        marginBottom: 15,
+      }
+    })    
   },
   resultListContainer:{
     backgroundColor: 'transparent',

@@ -2,15 +2,16 @@ import React from 'react';
 import {
   StyleSheet,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Platform
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const styles = StyleSheet.create({
   background:{
     backgroundColor: '#031214',
-    paddingBottom:20,
-    height: 80,
+    paddingBottom: Platform.OS === 'ios' ? 20: 0,
+    height: Platform.OS === 'ios' ? 80: 60,
     flexDirection: 'row'
   },
   iconContainer:{
@@ -68,7 +69,7 @@ export default class TabBar extends React.Component {
             onLongPress={onLongPress}
             style={styles.iconContainer}
           >
-            <Icon name={label === 'Search' ? 'search': 'user'} size={30}
+            <Icon name={label === 'Search' ? 'search': 'user'} size={Platform.OS === 'ios' ? 20: 30}
               color={isFocused ? '#ffffff' : '#666666'}/>
           </TouchableOpacity>  
         );
