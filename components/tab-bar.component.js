@@ -69,7 +69,7 @@ export default class TabBar extends React.Component {
             onLongPress={onLongPress}
             style={styles.iconContainer}
           >
-            <Icon name={label === 'Search' ? 'search': 'user'} size={Platform.OS === 'ios' ? 20: 30}
+            <Icon name={label === 'Search' ? 'search': 'user'} size={Platform.OS === 'ios' ? 30: 20}
               color={isFocused ? '#ffffff' : '#666666'}/>
           </TouchableOpacity>  
         );

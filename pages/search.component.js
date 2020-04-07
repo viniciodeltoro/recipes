@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     zIndex:1
   },
   movingContainer:{
-    //height: 105,
-    backgroundColor:'transparent'
+    backgroundColor:'transparent',
+    flex: 1
   },
   title:{
     fontSize: 30,
@@ -132,30 +132,29 @@ export default class Search extends React.Component {
               inputRange: [-50, 0, 50, 100],
               outputRange: [105, 105, 55, 55]
             })*/
-          }]
-        }>
+          }]}>
           <Text style={styles.title}>Browse</Text>
           <TextInput style={styles.searchInput}
             placeholderTextColor="#9bacb6"
             placeholder="Search recipes"/>
-        </Animated.View>
-        <View style={styles.resultListContainer}>
-        <Animated.FlatList data={this.state.exampleData}
-          style={styles.flatlist}
-          renderItem={({item}) => <SearchListItem item={item}/>}
-          keyExtractor={(item, index) => item.id.toString()}
-          onScroll={Animated.event([
-            {
-              nativeEvent: {
-                contentOffset: {
-                  y: this.scrollY
+
+          <Animated.FlatList data={this.state.exampleData}
+            style={styles.flatlist}
+            renderItem={({item}) => <SearchListItem item={item}/>}
+            keyExtractor={(item, index) => item.id.toString()}
+            onScroll={Animated.event([
+              {
+                nativeEvent: {
+                  contentOffset: {
+                    y: this.scrollY
+                  }
                 }
               }
-            }
-            ], { useNativeDriver: true }
-          )}
-          scrollEventThrottle={1}/>
-        </View>
+              ], { useNativeDriver: true }
+            )}
+            scrollEventThrottle={1}/>
+
+        </Animated.View>
      </View>    
     );
   }
