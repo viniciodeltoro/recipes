@@ -6,12 +6,14 @@ import {
   Platform
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {UiSizes} from '../helpers/ui-sizes';
 
 const styles = StyleSheet.create({
   background:{
     backgroundColor: '#031214',
-    paddingBottom: Platform.OS === 'ios' ? 20: 0,
-    height: Platform.OS === 'ios' ? 80: 60,
+    paddingBottom: UiSizes[Platform.OS].homeIndicatorHeight,
+    height: UiSizes[Platform.OS].tabBarHeight +
+      UiSizes[Platform.OS].homeIndicatorHeight,
     flexDirection: 'row'
   },
   iconContainer:{
@@ -67,9 +69,9 @@ export default class TabBar extends React.Component {
             testID={options.tabBarTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={styles.iconContainer}
-          >
-            <Icon name={label === 'Search' ? 'search': 'user'} size={Platform.OS === 'ios' ? 30: 20}
+            style={styles.iconContainer}>
+            <Icon name={label === 'Search' ? 'search': 'user'}
+              size={UiSizes[Platform.OS].tabBarIconHeight}
               color={isFocused ? '#ffffff' : '#666666'}/>
           </TouchableOpacity>  
         );
