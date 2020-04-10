@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     opacity: 1
   },
   flatlist:{
-    marginTop: flatListMarginTop,
+    paddingTop: flatListMarginTop,
     flex: 1
   }
 });
@@ -134,7 +134,7 @@ export default class Search extends React.Component {
             keyExtractor={(item, index) => item.id.toString()}
             renderScrollComponent={(props) => <Animated.ScrollView {...props}
               style={[styles.flatlist, {
-                marginTop: this.scrollY.interpolate({
+                paddingTop: this.scrollY.interpolate({
                   inputRange: [-largeTitleBarHeight, 0, largeTitleBarHeight, 100],
                   outputRange: [flatListMarginTop, flatListMarginTop, scrolledFlatListMarginTop, scrolledFlatListMarginTop]
                 })

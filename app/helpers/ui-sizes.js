@@ -18,13 +18,13 @@ export const UiSizes = {
     largeTitleBarHeight: 50,
     largeTitleFontSize: 34,
     navBarHeight: 56,
-    navBarFontSize: 17,
+    navBarFontSize: 20,
     pageSidePadding: 16,
     tabBarHeight: 56,
     tabBarIconHeight: 24,
     homeIndicatorHeight: 0,
-    searchInputContainerHeight: 51,
+    searchInputContainerHeight: 55,
     searchInputContainerPadding: 8,
-    searchInputFontSize: 17
+    searchInputFontSize: 16
   }
 }
