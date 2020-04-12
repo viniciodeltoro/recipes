@@ -5,7 +5,8 @@ import {
   TouchableOpacity,
   Platform
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FAIcon from 'react-native-vector-icons/FontAwesome';
+import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UiSizes} from '../helpers/ui-sizes';
 
 const styles = StyleSheet.create({
@@ -30,6 +31,19 @@ export default class TabBar extends React.Component {
   }
 
   render(){
+
+    const getIcon = (label, isFocused) =>{
+      if(label === 'Search' || label === 'User'){
+        return <FAIcon name={label.toLowerCase()}
+        size={UiSizes[Platform.OS].tabBarIconHeight}
+        color={isFocused ? '#ffffff' : '#666666'}/>
+      } else{
+        return <MCIcon name={label.toLowerCase()}
+        size={UiSizes[Platform.OS].tabBarIconHeight}
+        color={isFocused ? '#ffffff' : '#666666'}/>
+      }
+    }
+
     return (
       <View style={styles.background}>
       {this.props.state.routes.map((route, index) => {
@@ -70,9 +84,8 @@ export default class TabBar extends React.Component {
             onPress={onPress}
             onLongPress={onLongPress}
             style={styles.iconContainer}>
-            <Icon name={label === 'Search' ? 'search': 'user'}
-              size={UiSizes[Platform.OS].tabBarIconHeight}
-              color={isFocused ? '#ffffff' : '#666666'}/>
+            
+            {getIcon(label, isFocused)}
           </TouchableOpacity>  
         );
       })}

@@ -4,8 +4,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  FlatList,
-  StatusBar
+  FlatList
 } from 'react-native';
 import Animated from "react-native-reanimated";
 import SearchListItem from '../components/search-list-item.component';
@@ -101,7 +100,6 @@ export default class Search extends React.Component {
   render(){
     return (
       <View style={styles.background}>
-        <StatusBar barStyle="light-content" backgroundColor="#031214"/>
         <View style={styles.header}>
           <Animated.View style={[styles.smallTitleContainer, {
             opacity: this.scrollY.interpolate({
@@ -129,16 +127,18 @@ export default class Search extends React.Component {
           <SearchTextInput></SearchTextInput>
         </Animated.View>
 
+        <Animated.View style={[styles.flatlist, {
+          paddingTop: this.scrollY.interpolate({
+            inputRange: [-largeTitleBarHeight, 0, largeTitleBarHeight, 100],
+            outputRange: [flatListMarginTop, flatListMarginTop,
+              scrolledFlatListMarginTop, scrolledFlatListMarginTop]
+          })
+        }]}>
           <FlatList data={this.state.exampleData}
+            style={{flex: 1}}
             renderItem={({item}) => <SearchListItem item={item}/>}
             keyExtractor={(item, index) => item.id.toString()}
             renderScrollComponent={(props) => <Animated.ScrollView {...props}
-              style={[styles.flatlist, {
-                paddingTop: this.scrollY.interpolate({
-                  inputRange: [-largeTitleBarHeight, 0, largeTitleBarHeight, 100],
-                  outputRange: [flatListMarginTop, flatListMarginTop, scrolledFlatListMarginTop, scrolledFlatListMarginTop]
-                })
-              }]}
               onScroll={event([
                 {
                   nativeEvent: {
@@ -148,8 +148,9 @@ export default class Search extends React.Component {
                   }
                 }], { useNativeDriver: true }
               )}
-            />}    
+            />}
           />
+        </Animated.View>
       </View>    
     );
   }
