@@ -17,9 +17,8 @@ const styles = StyleSheet.create({
   },
   banner:{
     backgroundColor: 'grey',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 150,
+    height: 125,
+    width: '100%',
     marginBottom: 185
   },
   profilePhotoContainer:{
@@ -77,11 +76,9 @@ export default class UserProfile extends React.Component {
   render(){
     return (
       <View style={styles.background}>
-        <View style={styles.banner}>
-          <Image style={{height: 150, width: '100%'}}
+          <Image style={styles.banner}
             source={require('../assets/images/london-eye.jpg')}
             resizeMode="cover"/>
-        </View>
         <View style={styles.profilePhotoContainer}>
           <Image style={styles.photo} source={require('../assets/images/me.jpg')}/>
           <Text style={styles.name}>Vinicio Del Toro</Text>
