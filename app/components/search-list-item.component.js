@@ -1,31 +1,44 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
 
 export default class SearchListItem extends Component{
+  constructor(props){
+    super(props);
+  }
+
   render(){
     return(
       <View style={styles.container}>
-        <Text style={styles.title}>{this.props.item.title.substring(0, 20)}</Text>
-        <Text style={styles.description}>{this.props.item.body.substring(0, 20)}</Text>
+        <Image style={styles.image} source={this.props.item.image}
+          resizeMode="cover"/>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>{this.props.item.title}</Text>
+          <Text style={styles.subTitle}>{this.props.item.from}</Text>
+        </View>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
-    height:60,
-    marginTop:5,
-    marginBottom:5,
-    borderBottomColor: '#394a4d',
-    borderBottomWidth: 0.5
+  container: {
+    height:300,
+    width: '100%'
+  },
+  image: {
+    height: 200,
+    width: '100%'
+  },
+  textContainer: {
+    height: 100,
+    width: '100%'
   },
   title:{
     color: '#FFFFFF',
     fontSize:20
   },
-  description: {
-    color: '#394a4d',
-    fontSize:15
+  subTitle:{
+    color: '#FFFFFF',
+    fontSize:17
   }
 });

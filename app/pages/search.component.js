@@ -81,19 +81,19 @@ export default class Search extends React.Component {
   }
 
   componentDidMount(){
-    this.getData();
-  }
-
-  getData(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-    .then((json) => {
-      this.setState({
-        exampleData: json
-      });
-    })
-    .catch((error) => {
-      console.error(error);
+    this.setState({
+      exampleData: [
+        {id:1, title: 'Tamales de elote (orden)', from: 'Antojitos Maria', price: 30,
+          image: require('../assets/images/tamales.jpg')},
+        {id:2, title: 'Tacos al pastor', from: 'Tacolandia', price: 30,
+          image: require('../assets/images/tacos.jpg')},
+        {id:3, title: 'Pizza hawaiiana', from: 'La pizzeria', price: 45,
+          image: require('../assets/images/pizza.jpg')},
+        {id:4, title: 'Churros con chocolate', from: 'Churreria', price: 30,
+          image: require('../assets/images/churros.jpg')},
+        {id:5, title: 'Champurrado', from: 'Churreria', price: 15,
+          image: require('../assets/images/champurrado.jpg')},
+      ]
     });
   }
 
@@ -155,3 +155,16 @@ export default class Search extends React.Component {
     );
   }
 }
+
+  /*getData(){
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => response.json())
+    .then((json) => {
+      this.setState({
+        exampleData: json
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  }*/
