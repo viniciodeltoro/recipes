@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
   },
   image: {
     height: 200,
-    width: '100%'
+    width: '100%',
+    marginBottom: 10
   },
   textContainer: {
     height: 100,
@@ -35,10 +36,10 @@ const styles = StyleSheet.create({
   },
   title:{
     color: '#FFFFFF',
-    fontSize:20
+    fontSize:17
   },
   subTitle:{
     color: '#FFFFFF',
-    fontSize:17
+    fontSize:15
   }
 });
