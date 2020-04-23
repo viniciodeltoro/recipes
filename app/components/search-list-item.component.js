@@ -22,23 +22,23 @@ export default class SearchListItem extends Component{
 
 const styles = StyleSheet.create({
   container: {
-    height:300,
     width: '100%'
   },
   image: {
     height: 200,
     width: '100%',
-    marginBottom: 10
+    marginBottom: 5
   },
   textContainer: {
-    height: 100,
     width: '100%'
   },
   title:{
+    fontFamily: 'Nunito',
     color: '#FFFFFF',
     fontSize:17
   },
   subTitle:{
+    fontFamily: 'Nunito',
     color: '#FFFFFF',
     fontSize:15
   }

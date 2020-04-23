@@ -77,6 +77,7 @@ export default class TabBar extends React.Component {
 
         return (
           <TouchableOpacity
+            key={index}
             accessibilityRole="button"
             accessibilityStates={isFocused ? ['selected'] : []}
             accessibilityLabel={options.tabBarAccessibilityLabel}

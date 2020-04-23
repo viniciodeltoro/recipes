@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
   },
   title:{
     fontSize: UiSizes[Platform.OS].largeTitleFontSize,
-    fontWeight: 'bold',
+    fontFamily: 'Nunito-Bold',
     color: '#FFFFFF'
   },
   smallTitle:{
+    fontFamily: 'Nunito-SemiBold',
     fontSize: UiSizes[Platform.OS].navBarFontSize,
-    fontWeight: '600',
     color: '#FFFFFF',
   },
   smallTitleContainer:{
@@ -138,6 +138,7 @@ export default class Search extends React.Component {
             style={{flex: 1}}
             renderItem={({item}) => <SearchListItem item={item}/>}
             keyExtractor={(item, index) => item.id.toString()}
+            ItemSeparatorComponent={() => <View style={{height:30}}></View>}
             renderScrollComponent={(props) => <Animated.ScrollView {...props}
               onScroll={event([
                 {
