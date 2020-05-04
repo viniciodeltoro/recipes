@@ -4,22 +4,18 @@ import {
   Platform,
   StyleSheet,
   Text,
-  FlatList
+  Animated
 } from 'react-native';
-import Animated from "react-native-reanimated";
 import SearchListItem from '../components/search-list-item.component';
 import SearchTextInput from '../components/search-text-input.component';
 import {UiSizes} from '../helpers/ui-sizes';
 
-const { event, Value } = Animated;
 const largeTitleBarHeight = UiSizes[Platform.OS].largeTitleBarHeight;
-const flatListMarginTop = UiSizes[Platform.OS].navBarHeight +
-  UiSizes[Platform.OS].statusBarHeight +
-  UiSizes[Platform.OS].largeTitleBarHeight +
-  UiSizes[Platform.OS].searchInputContainerHeight;
-const scrolledFlatListMarginTop = UiSizes[Platform.OS].navBarHeight +
-  UiSizes[Platform.OS].statusBarHeight +
-  UiSizes[Platform.OS].searchInputContainerHeight;
+const headerHeight = UiSizes[Platform.OS].navBarHeight +
+  UiSizes[Platform.OS].statusBarHeight;
+const movingContainerHeight = UiSizes[Platform.OS].searchInputContainerHeight +
+  largeTitleBarHeight;
+const flatlistpaddingtop = movingContainerHeight + headerHeight;
  
 const styles = StyleSheet.create({
   background:{
@@ -30,8 +26,7 @@ const styles = StyleSheet.create({
   header:{
     position: 'absolute',
     paddingTop: UiSizes[Platform.OS].statusBarHeight,
-    height: UiSizes[Platform.OS].navBarHeight +
-      UiSizes[Platform.OS].statusBarHeight,
+    height: headerHeight,
     left:0,
     right: 0,
     top: 0,
@@ -42,12 +37,10 @@ const styles = StyleSheet.create({
   },
   movingContainer:{
     position: 'absolute',
-    height: UiSizes[Platform.OS].largeTitleBarHeight +
-      UiSizes[Platform.OS].searchInputContainerHeight,
+    height: movingContainerHeight,
     left:0,
     right: 0,
-    top: UiSizes[Platform.OS].navBarHeight +
-      UiSizes[Platform.OS].statusBarHeight,
+    top: headerHeight,
     zIndex:2,
     paddingHorizontal: UiSizes[Platform.OS].pageSidePadding,
     backgroundColor: '#031214'
@@ -66,7 +59,6 @@ const styles = StyleSheet.create({
     opacity: 1
   },
   flatlist:{
-    paddingTop: flatListMarginTop,
     flex: 1
   }
 });
@@ -75,9 +67,10 @@ export default class Search extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      exampleData: []
+      exampleData: [],
+      flatlistHeight: 1
     };
-    this.scrollY = new Value(0);
+    this.scrollY = new Animated.Value(0);
   }
 
   componentDidMount(){
@@ -126,32 +119,23 @@ export default class Search extends React.Component {
           </View>
           <SearchTextInput></SearchTextInput>
         </Animated.View>
-
-        <Animated.View style={[styles.flatlist, {
-          paddingTop: this.scrollY.interpolate({
-            inputRange: [-largeTitleBarHeight, 0, largeTitleBarHeight, 100],
-            outputRange: [flatListMarginTop, flatListMarginTop,
-              scrolledFlatListMarginTop, scrolledFlatListMarginTop]
-          })
-        }]}>
-          <FlatList data={this.state.exampleData}
-            style={{flex: 1}}
-            renderItem={({item}) => <SearchListItem item={item}/>}
-            keyExtractor={(item, index) => item.id.toString()}
-            ItemSeparatorComponent={() => <View style={{height:30}}></View>}
-            renderScrollComponent={(props) => <Animated.ScrollView {...props}
-              onScroll={event([
-                {
-                  nativeEvent: {
-                    contentOffset: {
-                      y: this.scrollY
-                    }
-                  }
-                }], { useNativeDriver: true }
-              )}
-            />}
-          />
-        </Animated.View>
+        <Animated.FlatList data={this.state.exampleData}
+          style={{flex: 1}}
+          onScroll={Animated.event([
+            {
+              nativeEvent: {
+                contentOffset: {
+                  y: this.scrollY
+                }
+              }
+            }], { useNativeDriver: true }
+          )}
+          renderItem={({item, index}) =>
+            <SearchListItem item={item} index={index}
+              length={this.state.exampleData.length}
+              listPadding={flatlistpaddingtop} />
+          }
+          keyExtractor={(item, index) => item.id.toString()}/>
       </View>    
     );
   }

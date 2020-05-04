@@ -7,7 +7,7 @@ export default class SearchTextInput extends Component{
     return(
       <View style={styles.container}>
         <TextInput style={styles.searchInput} placeholderTextColor="#9bacb6"
-          placeholder="Search recipes"/>
+          placeholder="Search"/>
       </View>
     )
   }
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#394a4d',
     color: '#FFFFFF',
     borderWidth: 1,
-    fontFamily: 'Nunito',
+    fontFamily: 'Nunito-Regular',
     fontSize: UiSizes[Platform.OS].searchInputFontSize,
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,

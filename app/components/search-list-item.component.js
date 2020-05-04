@@ -7,16 +7,25 @@ export default class SearchListItem extends Component{
   }
 
   render(){
+    const isFirstItem = this.props.index === 0;
+    const isLastItem = this.props.index + 1 === this.props.length;
     return(
-      <View style={styles.container}>
-        <Image style={styles.image} source={this.props.item.image}
-          resizeMode="cover"/>
-        <View style={styles.textContainer}>
-          <Text style={styles.title}>{this.props.item.title}</Text>
-          <Text style={styles.subTitle}>{this.props.item.from}</Text>
-        </View>
+      <View>
+        {isFirstItem
+          ? <View style={{height: this.props.listPadding}}></View>
+          : 
+          <View style={styles.container}>
+            <Image style={styles.image} source={this.props.item.image}
+              resizeMode="cover"/>
+            <View style={styles.textContainer}>
+              <Text style={styles.title}>{this.props.item.title}</Text>
+              <Text style={styles.subTitle}>{this.props.item.from}</Text>
+            </View>
+          </View>
+        }
+        {!isFirstItem && !isLastItem && <View style={{height:30}}></View>}
       </View>
-    )
+    );
   }
 }
 
@@ -33,12 +42,12 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   title:{
-    fontFamily: 'Nunito',
+    fontFamily: 'Nunito-Regular',
     color: '#FFFFFF',
     fontSize:17
   },
   subTitle:{
-    fontFamily: 'Nunito',
+    fontFamily: 'Nunito-Regular',
     color: '#FFFFFF',
     fontSize:15
   }

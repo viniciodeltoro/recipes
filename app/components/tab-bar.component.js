@@ -9,12 +9,14 @@ import FAIcon from 'react-native-vector-icons/FontAwesome';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UiSizes} from '../helpers/ui-sizes';
 
+const totalTabBarHeight = UiSizes[Platform.OS].tabBarHeight +
+  UiSizes[Platform.OS].homeIndicatorHeight;
+
 const styles = StyleSheet.create({
   background:{
     backgroundColor: '#031214',
     paddingBottom: UiSizes[Platform.OS].homeIndicatorHeight,
-    height: UiSizes[Platform.OS].tabBarHeight +
-      UiSizes[Platform.OS].homeIndicatorHeight,
+    height: totalTabBarHeight,
     flexDirection: 'row'
   },
   iconContainer:{
@@ -31,7 +33,6 @@ export default class TabBar extends React.Component {
   }
 
   render(){
-
     const getIcon = (label, isFocused) =>{
       if(label === 'Search' || label === 'User'){
         return <FAIcon name={label.toLowerCase()}
