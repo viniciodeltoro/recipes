@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   Platform
 } from 'react-native';
-import FAIcon from 'react-native-vector-icons/FontAwesome';
+import FAIcon from 'react-native-vector-icons/FontAwesome5';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UiSizes} from '../helpers/ui-sizes';
 
