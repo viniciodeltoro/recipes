@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { TextInput, View, StyleSheet } from 'react-native';
 import {UiSizes} from '../helpers/ui-sizes';
+import {UiColors} from '../helpers/ui-colors';
 
 export default class SearchTextInput extends Component{
   render(){
     return(
       <View style={styles.container}>
-        <TextInput style={styles.searchInput} placeholderTextColor="#9bacb6"
+        <TextInput style={styles.searchInput} placeholderTextColor={UiColors.dark.inputText}
           placeholder="Search"/>
       </View>
     )
@@ -21,10 +22,9 @@ const styles = StyleSheet.create({
   },
   searchInput:{
     flex: 1, 
-    borderColor: '#394a4d',
-    backgroundColor: '#394a4d',
-    color: '#FFFFFF',
-    borderWidth: 1,
+    backgroundColor: UiColors.dark.inputBackground,
+    color: UiColors.dark.hightEmphasis,
+    borderWidth: 0,
     fontFamily: 'Nunito-Bold',
     fontSize: UiSizes[Platform.OS].searchInputFontSize,
     borderTopLeftRadius: 5,

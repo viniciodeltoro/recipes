@@ -9,6 +9,7 @@ import {
 import SearchListItem from '../components/search-list-item.component';
 import SearchTextInput from '../components/search-text-input.component';
 import {UiSizes} from '../helpers/ui-sizes';
+import {UiColors} from '../helpers/ui-colors';
 
 const largeTitleBarHeight = UiSizes[Platform.OS].largeTitleBarHeight;
 const headerHeight = UiSizes[Platform.OS].navBarHeight +
@@ -19,7 +20,7 @@ const flatlistpaddingtop = movingContainerHeight + headerHeight;
  
 const styles = StyleSheet.create({
   background:{
-    backgroundColor: '#031214',
+    backgroundColor: UiColors.dark.base,
     paddingHorizontal: UiSizes[Platform.OS].pageSidePadding,
     flex: 1
   },
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     left:0,
     right: 0,
     top: 0,
-    backgroundColor: '#031214',
+    backgroundColor: UiColors.dark.bars,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex:3
@@ -43,17 +44,19 @@ const styles = StyleSheet.create({
     top: headerHeight,
     zIndex:2,
     paddingHorizontal: UiSizes[Platform.OS].pageSidePadding,
-    backgroundColor: '#031214'
+    backgroundColor: UiColors.dark.bars,
+    borderBottomWidth: 0.7,
+    borderColor: UiColors.dark.line 
   },
   title:{
     fontSize: UiSizes[Platform.OS].largeTitleFontSize,
     fontFamily: 'Nunito-Bold',
-    color: '#FFFFFF'
+    color: UiColors.dark.title
   },
   smallTitle:{
     fontFamily: 'Nunito-SemiBold',
     fontSize: UiSizes[Platform.OS].navBarFontSize,
-    color: '#FFFFFF',
+    color: UiColors.dark.title
   },
   smallTitleContainer:{
     opacity: 1

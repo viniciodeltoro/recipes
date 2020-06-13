@@ -8,16 +8,19 @@ import {
 import FAIcon from 'react-native-vector-icons/FontAwesome5';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UiSizes} from '../helpers/ui-sizes';
+import {UiColors} from '../helpers/ui-colors';
 
 const totalTabBarHeight = UiSizes[Platform.OS].tabBarHeight +
   UiSizes[Platform.OS].homeIndicatorHeight;
 
 const styles = StyleSheet.create({
   background:{
-    backgroundColor: '#031214',
+    backgroundColor: UiColors.dark.bars,
     paddingBottom: UiSizes[Platform.OS].homeIndicatorHeight,
     height: totalTabBarHeight,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    borderTopWidth: 0.7,
+    borderColor: UiColors.dark.line 
   },
   iconContainer:{
     justifyContent: 'center',
@@ -37,11 +40,11 @@ export default class TabBar extends React.Component {
       if(label === 'Search' || label === 'User'){
         return <FAIcon name={label.toLowerCase()}
         size={UiSizes[Platform.OS].tabBarIconHeight}
-        color={isFocused ? '#ffffff' : '#666666'}/>
+        color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}/>
       } else{
         return <MCIcon name={label.toLowerCase()}
         size={UiSizes[Platform.OS].tabBarIconHeight}
-        color={isFocused ? '#ffffff' : '#666666'}/>
+        color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}/>
       }
     }
 

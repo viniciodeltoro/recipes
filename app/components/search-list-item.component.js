@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
+import {UiColors} from '../helpers/ui-colors';
 
 export default class SearchListItem extends Component{
   constructor(props){
@@ -43,12 +44,12 @@ const styles = StyleSheet.create({
   },
   title:{
     fontFamily: 'Nunito-Regular',
-    color: '#FFFFFF',
+    color: UiColors.dark.hightEmphasis,
     fontSize:17
   },
   subTitle:{
     fontFamily: 'Nunito-Regular',
-    color: '#FFFFFF',
+    color: UiColors.dark.mediumEmphasis,
     fontSize:15
   }
 });
