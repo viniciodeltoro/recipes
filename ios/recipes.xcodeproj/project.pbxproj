@@ -8,32 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* recipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* recipesTests.m */; };
-		0DB8054FE44F43A481C3782C /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 971597A396844C22A98AB15F /* Nunito-LightItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2B1A56DA365AD02A43320888 /* libPods-recipesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783B83C673092065AFB172EF /* libPods-recipesTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* recipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* recipesTests.m */; };
-		4471D5967A394AC79EEC6FFA /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB8DFF4DF2DC4A83B12CF1D3 /* Nunito-SemiBoldItalic.ttf */; };
-		4495B2952CC8440191DAC322 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B18ADA105B9463086570F0F /* Nunito-ExtraBold.ttf */; };
-		542DAE42042E4DE2914813E0 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F69E37EF8649108DF5040E /* Nunito-Bold.ttf */; };
-		645866F157B848BFADA620B7 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64DBA050FB28438ABEC33E3C /* Nunito-Regular.ttf */; };
-		66B8B1A5FCD44C84A31A0F2A /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 997BA7EBA3D34868AFDC8216 /* Nunito-ExtraLight.ttf */; };
-		6C2FEC798A124F71900CC4E2 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 073FDA7BEDAD482799EDA5F6 /* Nunito-Light.ttf */; };
-		89E50DA843BE4D71AB3F2944 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98081293105F411D9EA6B2E5 /* Nunito-SemiBold.ttf */; };
-		8E4212953786475B90DA2E8D /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9122AABA8014257BECD7444 /* Nunito-ExtraLightItalic.ttf */; };
-		9DBB73481CD948728A4D17EB /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B286BA1F817428988556BA2 /* Nunito-Italic.ttf */; };
-		9F015939B39B45CF88DC08F6 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45826906F43C496393FB0CB5 /* Nunito-BlackItalic.ttf */; };
-		A074DBA484D74D9EBF3E3EC9 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F122F5FD61641B7B09B90A1 /* Nunito-ExtraBoldItalic.ttf */; };
-		BC9F17B243478B57CC116202 /* libPods-recipes-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41207F5A3B6EBD3429DB52C3 /* libPods-recipes-tvOSTests.a */; };
-		C3E31F6930F6ACA5541BF4D3 /* libPods-recipes-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA274AD862188059D3B850F /* libPods-recipes-tvOS.a */; };
-		DF83D3ACB775E89FA5574346 /* libPods-recipes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B23B864744CFC41ECEF277E /* libPods-recipes.a */; };
-		F0D32437A3EF4F018F240D92 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDEF33E1BC5243779C7844E9 /* Nunito-BoldItalic.ttf */; };
-		FC4A5AD4E31B47A587078D18 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB22A305A4CE4E309C08D7C2 /* Nunito-Black.ttf */; };
+		30301398104142657890E0B1 /* libPods-recipes-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31395CB75C8D3E56D9220579 /* libPods-recipes-tvOSTests.a */; };
+		9AC5197152AF1F38A36BE785 /* libPods-recipes-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 582A049091EABAEC46FDBF78 /* libPods-recipes-tvOS.a */; };
+		AC780702249497A300987D4F /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 167B3322E83042EA910F06DD /* Nunito-Black.ttf */; };
+		AC780703249497A300987D4F /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA91916016499E9F254E34 /* Nunito-BlackItalic.ttf */; };
+		AC780704249497A300987D4F /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77B32AD3D6094A3C9557D659 /* Nunito-Bold.ttf */; };
+		AC780705249497A300987D4F /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37CA3FCFBE9B497D80F56F74 /* Nunito-BoldItalic.ttf */; };
+		AC780706249497A300987D4F /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55D0D886341C4EF986DB4044 /* Nunito-ExtraBold.ttf */; };
+		AC780707249497A300987D4F /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CE8F008B66A4146800E0209 /* Nunito-ExtraBoldItalic.ttf */; };
+		AC780708249497A300987D4F /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C51E6DBC6894673B77DBF74 /* Nunito-ExtraLight.ttf */; };
+		AC780709249497A300987D4F /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AADEBA59662E496CB0675CDF /* Nunito-ExtraLightItalic.ttf */; };
+		AC78070A249497A300987D4F /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD0669B0F914CC49728E7C7 /* Nunito-Italic.ttf */; };
+		AC78070B249497A300987D4F /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D13C9CDE03641BF93B3B791 /* Nunito-Light.ttf */; };
+		AC78070C249497A300987D4F /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 157330D90CFD4822B669E212 /* Nunito-LightItalic.ttf */; };
+		AC78070D249497A300987D4F /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F58EDB098C864EFDA954F781 /* Nunito-Regular.ttf */; };
+		AC78070E249497A300987D4F /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0DBC1D2C9874DC9AE6F08C4 /* Nunito-SemiBold.ttf */; };
+		AC78070F249497A300987D4F /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54C31EB2C1DD44ED8F4E93B7 /* Nunito-SemiBoldItalic.ttf */; };
+		BBF9B8C18490DF31C0540C12 /* libPods-recipes-recipesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4185B1994E17A2041DDC01D5 /* libPods-recipes-recipesTests.a */; };
+		E30C9FDBE7FE9309977ED10D /* libPods-recipes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1232CAA11EF16CEC6A28FE9 /* libPods-recipes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +58,8 @@
 		00E356EE1AD99517003FC87E /* recipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* recipesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recipesTests.m; sourceTree = "<group>"; };
-		047DAFB5EF65CF89E352FD35 /* Pods-recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes.debug.xcconfig"; path = "Target Support Files/Pods-recipes/Pods-recipes.debug.xcconfig"; sourceTree = "<group>"; };
-		073FDA7BEDAD482799EDA5F6 /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Light.ttf"; sourceTree = "<group>"; };
-		0CAB43B921AB49C284696F6B /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		100456F3B73B46F48EC96FBD /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		0701E865A089415AAF181AA2 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		078890E8E50C12A3EE66ECA4 /* Pods-recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes.release.xcconfig"; path = "Target Support Files/Pods-recipes/Pods-recipes.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = recipes/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = recipes/AppDelegate.m; sourceTree = "<group>"; };
@@ -69,48 +67,50 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = recipes/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = recipes/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = recipes/main.m; sourceTree = "<group>"; };
-		2225E22EE8A5452FA9E7EA95 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		157330D90CFD4822B669E212 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-LightItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		167B3322E83042EA910F06DD /* Nunito-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Black.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Black.ttf"; sourceTree = "<group>"; };
+		18654CE58EF24963B5CBAA46 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		1969E01127E447D5B736B93D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* recipes-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recipes-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* recipes-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recipes-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EDEF571FD91530CC73008C7 /* Pods-recipes-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-recipes-tvOS/Pods-recipes-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		31A6B9D367B8D4BC3794F358 /* Pods-recipesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipesTests.release.xcconfig"; path = "Target Support Files/Pods-recipesTests/Pods-recipesTests.release.xcconfig"; sourceTree = "<group>"; };
-		3DCC528F3C424115AA66B23B /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		41207F5A3B6EBD3429DB52C3 /* libPods-recipes-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A06AD637903D3E75A060CF /* Pods-recipes-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-recipes-tvOSTests/Pods-recipes-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		45826906F43C496393FB0CB5 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BlackItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
-		4B18ADA105B9463086570F0F /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4B286BA1F817428988556BA2 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Italic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Italic.ttf"; sourceTree = "<group>"; };
-		5F122F5FD61641B7B09B90A1 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		64DBA050FB28438ABEC33E3C /* Nunito-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Regular.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Regular.ttf"; sourceTree = "<group>"; };
-		6839061BFC4E0298D718E04B /* Pods-recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes.release.xcconfig"; path = "Target Support Files/Pods-recipes/Pods-recipes.release.xcconfig"; sourceTree = "<group>"; };
-		783B83C673092065AFB172EF /* libPods-recipesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B23B864744CFC41ECEF277E /* libPods-recipes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8080E4205A874DCAB2DAADED /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		80E32DBFFAFA47B3B0EDB35F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		971597A396844C22A98AB15F /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-LightItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
-		98081293105F411D9EA6B2E5 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
-		997BA7EBA3D34868AFDC8216 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLight.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
-		9DCC69112DC039A543FCBEC9 /* Pods-recipes-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOS.release.xcconfig"; path = "Target Support Files/Pods-recipes-tvOS/Pods-recipes-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		A39094A32F0F4580ACF284B6 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		A9122AABA8014257BECD7444 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		AB22A305A4CE4E309C08D7C2 /* Nunito-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Black.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Black.ttf"; sourceTree = "<group>"; };
-		AB8DFF4DF2DC4A83B12CF1D3 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		B1103210BC2C44109E3FA512 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		B34400A56E241CCDC51B5198 /* Pods-recipes-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-recipes-tvOSTests/Pods-recipes-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		B5D7BCD375C2282E83579B3F /* Pods-recipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipesTests.debug.xcconfig"; path = "Target Support Files/Pods-recipesTests/Pods-recipesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7EE76D771714BC09B3755EC /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		BBA274AD862188059D3B850F /* libPods-recipes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE99BF8DAF454F2185C37ECF /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		C5414C3DBD07451FA6544ECA /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		C930A8735D594F828D71E8A5 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		D5F69E37EF8649108DF5040E /* Nunito-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Bold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Bold.ttf"; sourceTree = "<group>"; };
-		D862458AF9A54B92BEAC6ECA /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		DAB8B1BA04664594835DB11D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		EB1649E6D9DC4E5790956D87 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		31395CB75C8D3E56D9220579 /* libPods-recipes-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FD72854FEB4398848801E0 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		35FC56965E5F7111E64E84EA /* Pods-recipes-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOS.release.xcconfig"; path = "Target Support Files/Pods-recipes-tvOS/Pods-recipes-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		37CA3FCFBE9B497D80F56F74 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3CE8F008B66A4146800E0209 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		4185B1994E17A2041DDC01D5 /* libPods-recipes-recipesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes-recipesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4196673FAA4E433E92ECA373 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		54C31EB2C1DD44ED8F4E93B7 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		55D0D886341C4EF986DB4044 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		582A049091EABAEC46FDBF78 /* libPods-recipes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0D0F56DC344402EF2A2614 /* Pods-recipes-recipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-recipesTests.debug.xcconfig"; path = "Target Support Files/Pods-recipes-recipesTests/Pods-recipes-recipesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A637F45142141529202D5FB /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		6C51E6DBC6894673B77DBF74 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLight.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		6D13C9CDE03641BF93B3B791 /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Light.ttf"; sourceTree = "<group>"; };
+		6E0A1E1E15044D988F939D1B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		6ED18C88F54C408B84928085 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		77B32AD3D6094A3C9557D659 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Bold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		827A586943ED68D37871DA06 /* Pods-recipes-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-recipes-tvOSTests/Pods-recipes-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E48E6C075D01AFAC69E4CB3 /* Pods-recipes-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-recipes-tvOS/Pods-recipes-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		907B69104708490592892989 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		94BC36001A8745BAB0DD1872 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		97BD0F8D698D412D846FC03B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		9CBA91916016499E9F254E34 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BlackItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A82C46328963A63631C3FD25 /* Pods-recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes.debug.xcconfig"; path = "Target Support Files/Pods-recipes/Pods-recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		AADEBA59662E496CB0675CDF /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AFF7C79A696A4FE293BABFBD /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		BCAB696048D441F4A255E57A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		E1CBDFE7B51149107AF06D7A /* Pods-recipes-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-recipes-tvOSTests/Pods-recipes-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CBA3B21CAB005CEF6A3969 /* Pods-recipes-recipesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recipes-recipesTests.release.xcconfig"; path = "Target Support Files/Pods-recipes-recipesTests/Pods-recipes-recipesTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAD0669B0F914CC49728E7C7 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Italic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FCA276E58AB7445E84708EDC /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		FDEF33E1BC5243779C7844E9 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BoldItalic.ttf"; path = "../app/assets/fonts/Nunito/Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F0DBC1D2C9874DC9AE6F08C4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../app/assets/fonts/Nunito/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		F1232CAA11EF16CEC6A28FE9 /* libPods-recipes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-recipes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12B2E521E364D0E889D4348 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		F58EDB098C864EFDA954F781 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Regular.ttf"; path = "../app/assets/fonts/Nunito/Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		F98CA259455D4F77A2D582D2 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		FD4C2FBF31814212841B9810 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1A56DA365AD02A43320888 /* libPods-recipesTests.a in Frameworks */,
+				BBF9B8C18490DF31C0540C12 /* libPods-recipes-recipesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF83D3ACB775E89FA5574346 /* libPods-recipes.a in Frameworks */,
+				E30C9FDBE7FE9309977ED10D /* libPods-recipes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E31F6930F6ACA5541BF4D3 /* libPods-recipes-tvOS.a in Frameworks */,
+				9AC5197152AF1F38A36BE785 /* libPods-recipes-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9F17B243478B57CC116202 /* libPods-recipes-tvOSTests.a in Frameworks */,
+				30301398104142657890E0B1 /* libPods-recipes-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,43 +166,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0459CADA36FA4849A6CEEC04 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BE99BF8DAF454F2185C37ECF /* AntDesign.ttf */,
-				DAB8B1BA04664594835DB11D /* Entypo.ttf */,
-				0CAB43B921AB49C284696F6B /* EvilIcons.ttf */,
-				A39094A32F0F4580ACF284B6 /* Feather.ttf */,
-				8080E4205A874DCAB2DAADED /* FontAwesome.ttf */,
-				B1103210BC2C44109E3FA512 /* FontAwesome5_Brands.ttf */,
-				D862458AF9A54B92BEAC6ECA /* FontAwesome5_Regular.ttf */,
-				2225E22EE8A5452FA9E7EA95 /* FontAwesome5_Solid.ttf */,
-				C5414C3DBD07451FA6544ECA /* Fontisto.ttf */,
-				C930A8735D594F828D71E8A5 /* Foundation.ttf */,
-				B7EE76D771714BC09B3755EC /* Ionicons.ttf */,
-				FCA276E58AB7445E84708EDC /* MaterialCommunityIcons.ttf */,
-				100456F3B73B46F48EC96FBD /* MaterialIcons.ttf */,
-				80E32DBFFAFA47B3B0EDB35F /* Octicons.ttf */,
-				EB1649E6D9DC4E5790956D87 /* SimpleLineIcons.ttf */,
-				3DCC528F3C424115AA66B23B /* Zocial.ttf */,
-				AB22A305A4CE4E309C08D7C2 /* Nunito-Black.ttf */,
-				45826906F43C496393FB0CB5 /* Nunito-BlackItalic.ttf */,
-				D5F69E37EF8649108DF5040E /* Nunito-Bold.ttf */,
-				FDEF33E1BC5243779C7844E9 /* Nunito-BoldItalic.ttf */,
-				4B18ADA105B9463086570F0F /* Nunito-ExtraBold.ttf */,
-				5F122F5FD61641B7B09B90A1 /* Nunito-ExtraBoldItalic.ttf */,
-				997BA7EBA3D34868AFDC8216 /* Nunito-ExtraLight.ttf */,
-				A9122AABA8014257BECD7444 /* Nunito-ExtraLightItalic.ttf */,
-				4B286BA1F817428988556BA2 /* Nunito-Italic.ttf */,
-				073FDA7BEDAD482799EDA5F6 /* Nunito-Light.ttf */,
-				971597A396844C22A98AB15F /* Nunito-LightItalic.ttf */,
-				64DBA050FB28438ABEC33E3C /* Nunito-Regular.ttf */,
-				98081293105F411D9EA6B2E5 /* Nunito-SemiBold.ttf */,
-				AB8DFF4DF2DC4A83B12CF1D3 /* Nunito-SemiBoldItalic.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* recipes */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,12 +185,27 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7B23B864744CFC41ECEF277E /* libPods-recipes.a */,
-				BBA274AD862188059D3B850F /* libPods-recipes-tvOS.a */,
-				41207F5A3B6EBD3429DB52C3 /* libPods-recipes-tvOSTests.a */,
-				783B83C673092065AFB172EF /* libPods-recipesTests.a */,
+				F1232CAA11EF16CEC6A28FE9 /* libPods-recipes.a */,
+				4185B1994E17A2041DDC01D5 /* libPods-recipes-recipesTests.a */,
+				582A049091EABAEC46FDBF78 /* libPods-recipes-tvOS.a */,
+				31395CB75C8D3E56D9220579 /* libPods-recipes-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6321206D224E68CE10112513 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A82C46328963A63631C3FD25 /* Pods-recipes.debug.xcconfig */,
+				078890E8E50C12A3EE66ECA4 /* Pods-recipes.release.xcconfig */,
+				5C0D0F56DC344402EF2A2614 /* Pods-recipes-recipesTests.debug.xcconfig */,
+				E2CBA3B21CAB005CEF6A3969 /* Pods-recipes-recipesTests.release.xcconfig */,
+				8E48E6C075D01AFAC69E4CB3 /* Pods-recipes-tvOS.debug.xcconfig */,
+				35FC56965E5F7111E64E84EA /* Pods-recipes-tvOS.release.xcconfig */,
+				E1CBDFE7B51149107AF06D7A /* Pods-recipes-tvOSTests.debug.xcconfig */,
+				827A586943ED68D37871DA06 /* Pods-recipes-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -245,8 +223,8 @@
 				00E356EF1AD99517003FC87E /* recipesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				B1B33BAD3793EFB655456460 /* Pods */,
-				0459CADA36FA4849A6CEEC04 /* Resources */,
+				6321206D224E68CE10112513 /* Pods */,
+				DDCD788B0EB94DF0ABC3D0D5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -264,19 +242,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B1B33BAD3793EFB655456460 /* Pods */ = {
+		DDCD788B0EB94DF0ABC3D0D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				047DAFB5EF65CF89E352FD35 /* Pods-recipes.debug.xcconfig */,
-				6839061BFC4E0298D718E04B /* Pods-recipes.release.xcconfig */,
-				2EDEF571FD91530CC73008C7 /* Pods-recipes-tvOS.debug.xcconfig */,
-				9DCC69112DC039A543FCBEC9 /* Pods-recipes-tvOS.release.xcconfig */,
-				42A06AD637903D3E75A060CF /* Pods-recipes-tvOSTests.debug.xcconfig */,
-				B34400A56E241CCDC51B5198 /* Pods-recipes-tvOSTests.release.xcconfig */,
-				B5D7BCD375C2282E83579B3F /* Pods-recipesTests.debug.xcconfig */,
-				31A6B9D367B8D4BC3794F358 /* Pods-recipesTests.release.xcconfig */,
+				94BC36001A8745BAB0DD1872 /* AntDesign.ttf */,
+				97BD0F8D698D412D846FC03B /* Entypo.ttf */,
+				F98CA259455D4F77A2D582D2 /* EvilIcons.ttf */,
+				FD4C2FBF31814212841B9810 /* Feather.ttf */,
+				18654CE58EF24963B5CBAA46 /* FontAwesome.ttf */,
+				907B69104708490592892989 /* FontAwesome5_Brands.ttf */,
+				6ED18C88F54C408B84928085 /* FontAwesome5_Regular.ttf */,
+				6E0A1E1E15044D988F939D1B /* FontAwesome5_Solid.ttf */,
+				32FD72854FEB4398848801E0 /* Fontisto.ttf */,
+				BCAB696048D441F4A255E57A /* Foundation.ttf */,
+				6A637F45142141529202D5FB /* Ionicons.ttf */,
+				4196673FAA4E433E92ECA373 /* MaterialCommunityIcons.ttf */,
+				AFF7C79A696A4FE293BABFBD /* MaterialIcons.ttf */,
+				0701E865A089415AAF181AA2 /* Octicons.ttf */,
+				1969E01127E447D5B736B93D /* SimpleLineIcons.ttf */,
+				F12B2E521E364D0E889D4348 /* Zocial.ttf */,
+				167B3322E83042EA910F06DD /* Nunito-Black.ttf */,
+				9CBA91916016499E9F254E34 /* Nunito-BlackItalic.ttf */,
+				77B32AD3D6094A3C9557D659 /* Nunito-Bold.ttf */,
+				37CA3FCFBE9B497D80F56F74 /* Nunito-BoldItalic.ttf */,
+				55D0D886341C4EF986DB4044 /* Nunito-ExtraBold.ttf */,
+				3CE8F008B66A4146800E0209 /* Nunito-ExtraBoldItalic.ttf */,
+				6C51E6DBC6894673B77DBF74 /* Nunito-ExtraLight.ttf */,
+				AADEBA59662E496CB0675CDF /* Nunito-ExtraLightItalic.ttf */,
+				EAD0669B0F914CC49728E7C7 /* Nunito-Italic.ttf */,
+				6D13C9CDE03641BF93B3B791 /* Nunito-Light.ttf */,
+				157330D90CFD4822B669E212 /* Nunito-LightItalic.ttf */,
+				F58EDB098C864EFDA954F781 /* Nunito-Regular.ttf */,
+				F0DBC1D2C9874DC9AE6F08C4 /* Nunito-SemiBold.ttf */,
+				54C31EB2C1DD44ED8F4E93B7 /* Nunito-SemiBoldItalic.ttf */,
 			);
-			path = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "recipesTests" */;
 			buildPhases = (
-				C52D2F06369499FCFBE04F75 /* [CP] Check Pods Manifest.lock */,
+				B112C8BE646BB8E349A40486 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				45C092AD0DD1DB32731F56CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,13 +306,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "recipes" */;
 			buildPhases = (
-				1F931B01BBA02600C5AF4A27 /* [CP] Check Pods Manifest.lock */,
+				5C504B6D1D004E3C0C550D36 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				EF2EBE890C212272390DE285 /* [CP] Copy Pods Resources */,
+				B311AC6966448B7DDAA078B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,7 +327,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "recipes-tvOS" */;
 			buildPhases = (
-				87C0747538026E0D1CE5F652 /* [CP] Check Pods Manifest.lock */,
+				38E91216F2BCFAA089A01248 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -346,7 +347,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "recipes-tvOSTests" */;
 			buildPhases = (
-				CB744764B9D00050FCA54BD4 /* [CP] Check Pods Manifest.lock */,
+				AAE54C6F4E2AA3B0C7A90742 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -367,20 +368,17 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = Facebook;
+				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = UR5LFCWZ6R;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = UR5LFCWZ6R;
+						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UR5LFCWZ6R;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -423,22 +421,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC780702249497A300987D4F /* Nunito-Black.ttf in Resources */,
+				AC780703249497A300987D4F /* Nunito-BlackItalic.ttf in Resources */,
+				AC780704249497A300987D4F /* Nunito-Bold.ttf in Resources */,
+				AC780705249497A300987D4F /* Nunito-BoldItalic.ttf in Resources */,
+				AC780706249497A300987D4F /* Nunito-ExtraBold.ttf in Resources */,
+				AC780707249497A300987D4F /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				AC780708249497A300987D4F /* Nunito-ExtraLight.ttf in Resources */,
+				AC780709249497A300987D4F /* Nunito-ExtraLightItalic.ttf in Resources */,
+				AC78070A249497A300987D4F /* Nunito-Italic.ttf in Resources */,
+				AC78070B249497A300987D4F /* Nunito-Light.ttf in Resources */,
+				AC78070C249497A300987D4F /* Nunito-LightItalic.ttf in Resources */,
+				AC78070D249497A300987D4F /* Nunito-Regular.ttf in Resources */,
+				AC78070E249497A300987D4F /* Nunito-SemiBold.ttf in Resources */,
+				AC78070F249497A300987D4F /* Nunito-SemiBoldItalic.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				FC4A5AD4E31B47A587078D18 /* Nunito-Black.ttf in Resources */,
-				9F015939B39B45CF88DC08F6 /* Nunito-BlackItalic.ttf in Resources */,
-				542DAE42042E4DE2914813E0 /* Nunito-Bold.ttf in Resources */,
-				F0D32437A3EF4F018F240D92 /* Nunito-BoldItalic.ttf in Resources */,
-				4495B2952CC8440191DAC322 /* Nunito-ExtraBold.ttf in Resources */,
-				A074DBA484D74D9EBF3E3EC9 /* Nunito-ExtraBoldItalic.ttf in Resources */,
-				66B8B1A5FCD44C84A31A0F2A /* Nunito-ExtraLight.ttf in Resources */,
-				8E4212953786475B90DA2E8D /* Nunito-ExtraLightItalic.ttf in Resources */,
-				9DBB73481CD948728A4D17EB /* Nunito-Italic.ttf in Resources */,
-				6C2FEC798A124F71900CC4E2 /* Nunito-Light.ttf in Resources */,
-				0DB8054FE44F43A481C3782C /* Nunito-LightItalic.ttf in Resources */,
-				645866F157B848BFADA620B7 /* Nunito-Regular.ttf in Resources */,
-				89E50DA843BE4D71AB3F2944 /* Nunito-SemiBold.ttf in Resources */,
-				4471D5967A394AC79EEC6FFA /* Nunito-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,29 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		1F931B01BBA02600C5AF4A27 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-recipes-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -510,7 +486,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		87C0747538026E0D1CE5F652 /* [CP] Check Pods Manifest.lock */ = {
+		38E91216F2BCFAA089A01248 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,7 +508,55 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C52D2F06369499FCFBE04F75 /* [CP] Check Pods Manifest.lock */ = {
+		45C092AD0DD1DB32731F56CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recipes-recipesTests/Pods-recipes-recipesTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recipes-recipesTests/Pods-recipes-recipesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C504B6D1D004E3C0C550D36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,14 +571,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-recipesTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-recipes-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB744764B9D00050FCA54BD4 /* [CP] Check Pods Manifest.lock */ = {
+		AAE54C6F4E2AA3B0C7A90742 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,7 +600,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF2EBE890C212272390DE285 /* [CP] Copy Pods Resources */ = {
+		B112C8BE646BB8E349A40486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recipes-recipesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B311AC6966448B7DDAA078B2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -729,10 +775,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5D7BCD375C2282E83579B3F /* Pods-recipesTests.debug.xcconfig */;
+			baseConfigurationReference = 5C0D0F56DC344402EF2A2614 /* Pods-recipes-recipesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -753,11 +798,10 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31A6B9D367B8D4BC3794F358 /* Pods-recipesTests.release.xcconfig */;
+			baseConfigurationReference = E2CBA3B21CAB005CEF6A3969 /* Pods-recipes-recipesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
 				INFOPLIST_FILE = recipesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -774,50 +818,55 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 047DAFB5EF65CF89E352FD35 /* Pods-recipes.debug.xcconfig */;
+			baseConfigurationReference = A82C46328963A63631C3FD25 /* Pods-recipes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
 				INFOPLIST_FILE = recipes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.great.meals;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = recipes;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6839061BFC4E0298D718E04B /* Pods-recipes.release.xcconfig */;
+			baseConfigurationReference = 078890E8E50C12A3EE66ECA4 /* Pods-recipes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
 				INFOPLIST_FILE = recipes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.great.meals;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = recipes;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EDEF571FD91530CC73008C7 /* Pods-recipes-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 8E48E6C075D01AFAC69E4CB3 /* Pods-recipes-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -826,7 +875,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "recipes-tvOS/Info.plist";
@@ -836,7 +884,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.tv.great.meals;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.recipes-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -846,7 +894,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DCC69112DC039A543FCBEC9 /* Pods-recipes-tvOS.release.xcconfig */;
+			baseConfigurationReference = 35FC56965E5F7111E64E84EA /* Pods-recipes-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -856,7 +904,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = UR5LFCWZ6R;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "recipes-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -865,7 +912,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.tv.great.meals;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.recipes-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -875,7 +922,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A06AD637903D3E75A060CF /* Pods-recipes-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = E1CBDFE7B51149107AF06D7A /* Pods-recipes-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -892,7 +939,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.recipes-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.recipes-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recipes-tvOS.app/recipes-tvOS";
@@ -902,7 +949,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B34400A56E241CCDC51B5198 /* Pods-recipes-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 827A586943ED68D37871DA06 /* Pods-recipes-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -919,7 +966,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.recipes-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.recipes-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recipes-tvOS.app/recipes-tvOS";
@@ -975,6 +1022,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1022,6 +1075,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

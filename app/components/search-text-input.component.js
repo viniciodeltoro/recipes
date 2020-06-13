@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#394a4d',
     color: '#FFFFFF',
     borderWidth: 1,
-    fontFamily: 'Nunito-Regular',
+    fontFamily: 'Nunito-Bold',
     fontSize: UiSizes[Platform.OS].searchInputFontSize,
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
