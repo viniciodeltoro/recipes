@@ -21,7 +21,6 @@ const flatlistpaddingtop = movingContainerHeight + headerHeight;
 const styles = StyleSheet.create({
   background:{
     backgroundColor: UiColors.dark.base,
-    paddingHorizontal: UiSizes[Platform.OS].pageSidePadding,
     flex: 1
   },
   header:{
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
     right: 0,
     top: headerHeight,
     zIndex:2,
-    paddingHorizontal: UiSizes[Platform.OS].pageSidePadding,
+    paddingHorizontal: UiSizes[Platform.OS].searchInputContainerPadding,
     backgroundColor: UiColors.dark.bars,
     borderBottomWidth: 0.7,
     borderColor: UiColors.dark.line 
@@ -79,15 +78,27 @@ export default class Search extends React.Component {
   componentDidMount(){
     this.setState({
       exampleData: [
-        {id:1, title: 'Tamales de elote (orden)', from: 'Antojitos Maria', price: 30,
+        {id:0, title: '', from: '', isFavorite: false,
+          image: undefined},
+        {id:1, title: 'Antojitos Don Juan',
+          description: 'Antojitos mexicanos y bebidas',
+          isFavorite: false,
           image: require('../assets/images/tamales.jpg')},
-        {id:2, title: 'Tacos al pastor', from: 'Tacolandia', price: 30,
+        {id:2, title: 'Tacos al pastor',
+          description: 'Tacolandia',
+          isFavorite: false,
           image: require('../assets/images/tacos.jpg')},
-        {id:3, title: 'Pizza hawaiiana', from: 'La pizzeria', price: 45,
+        {id:3, title: 'Pizza hawaiiana',
+          description: 'La pizzeria',
+          isFavorite: false,
           image: require('../assets/images/pizza.jpg')},
-        {id:4, title: 'Churros con chocolate', from: 'Churreria', price: 30,
+        {id:4, title: 'Churros con chocolate',
+          description: 'Churreria',
+          isFavorite: false,
           image: require('../assets/images/churros.jpg')},
-        {id:5, title: 'Champurrado', from: 'Churreria', price: 15,
+        {id:5, title: 'Champurrado',
+          description: 'Churreria',
+          isFavorite: false,
           image: require('../assets/images/champurrado.jpg')},
       ]
     });

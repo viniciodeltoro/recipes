@@ -3,11 +3,37 @@ import { TextInput, View, StyleSheet } from 'react-native';
 import {UiSizes} from '../helpers/ui-sizes';
 import {UiColors} from '../helpers/ui-colors';
 
-export default class SearchTextInput extends Component{
+export default class SearchTextInput extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      inputIsFocused: false
+    };
+    this.onTextInputFocus = this.onTextInputFocus.bind(this);
+    this.onTextInputBlur = this.onTextInputBlur.bind(this);
+  }
+
+  onTextInputFocus(){
+    console.log('Text input is focused');
+    this.setState({
+      inputIsFocused: true
+    });
+  }
+
+  onTextInputBlur(){
+    console.log('Text input is blurred');
+    this.setState({
+      inputIsFocused:false 
+    });
+  }
+
   render(){
     return(
       <View style={styles.container}>
-        <TextInput style={styles.searchInput} placeholderTextColor={UiColors.dark.inputText}
+        <TextInput style={styles.searchInput}
+          placeholderTextColor={UiColors.dark.inputText}
+          onFocus={this.onTextInputFocus}
+          onBlur={this.onTextInputBlur}
           placeholder="Search"/>
       </View>
     )
