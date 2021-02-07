@@ -1,77 +1,80 @@
-import React, { Component } from 'react';
-import { TextInput, View, StyleSheet, Text,
-  Dimensions, Animated } from 'react-native';
+import React, {useState} from 'react';
+import {
+  TextInput,
+  View,
+  StyleSheet,
+  Text,
+  Dimensions,
+  Animated,
+  Keyboard,
+  TouchableOpacity,
+} from 'react-native';
 import {UiSizes} from '../helpers/ui-sizes';
 import {UiColors} from '../helpers/ui-colors';
 import FAIcon from 'react-native-vector-icons/FontAwesome5';
 
-const { width } = Dimensions.get('window');
-const containerXPos = width - (UiSizes[Platform.OS].searchInputContainerPadding * 2) - 10;
+const {width} = Dimensions.get('window');
+const containerXPos =
+  width - UiSizes[Platform.OS].searchInputContainerPadding * 2 - 10;
 
-export default class SearchTextInput extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      inputIsFocused: false,
-      animation : new Animated.Value(0),
-    };
-    this.onTextInputFocus = this.onTextInputFocus.bind(this);
-    this.onTextInputBlur = this.onTextInputBlur.bind(this);
-  }
+const SearchTextInput = () => {
+  const [inputIsFocused, changeInputIsFocused] = useState(false);
+  const [animation] = useState(new Animated.Value(0));
 
-  onTextInputFocus(){
-    console.log('Text input is focused');
-    this.setState({
-      inputIsFocused: true
-    });
-    Animated.timing(this.state.animation, {
-      toValue : -67,
-      duration : 200,
-      useNativeDriver: true
-    }).start();    
-  }
-
-  onTextInputBlur(){
-    console.log('Text input is blurred');
-    this.setState({
-      inputIsFocused:false 
-    });
-    Animated.timing(this.state.animation, {
-      toValue : 0,
-      duration : 200,
-      useNativeDriver: true
+  const onTextInputFocus = () => {
+    changeInputIsFocused(true);
+    Animated.timing(animation, {
+      toValue: -67,
+      duration: 300,
+      useNativeDriver: true,
     }).start();
-  }
+  };
 
-  render(){
-    return(
-      <View>
-        <Animated.View style={[
-          { transform: [{ translateX: this.state.animation }] },
-          styles.cancelContainer
+  const onTextInputBlur = () => {
+    changeInputIsFocused(false);
+    Animated.timing(animation, {
+      toValue: 0,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
+  };
+
+  const onCancel = () => {
+    Keyboard.dismiss();
+  };
+
+  return (
+    <View>
+      <Animated.View
+        style={[
+          styles.cancelContainer,
+          {transform: [{translateX: animation}]},
         ]}>
-          <View style={styles.inputRightPadding}></View>
-          <View style={{width: '100%', height: '100%', justifyContent: 'center'}}>
+        <View style={styles.inputRightPadding} />
+        <View style={{width: '100%', height: '100%', justifyContent: 'center'}}>
+          <TouchableOpacity onPress={onCancel}>
             <Text style={styles.cancelText}>Cancel</Text>
-          </View>
-        </Animated.View>
-        <View style={styles.container}>
-          <View style={styles.iconContainer}>
-            <FAIcon name="search" size={16} color={UiColors.dark.inputText}/>
-          </View>
-          <TextInput style={styles.searchInput}
-            placeholderTextColor={UiColors.dark.inputText}
-            onFocus={this.onTextInputFocus}
-            onBlur={this.onTextInputBlur}
-            placeholder="Search"/>
+          </TouchableOpacity>
         </View>
+      </Animated.View>
+      <View style={styles.container}>
+        <View style={styles.iconContainer}>
+          <FAIcon name="search" size={16} color={UiColors.dark.inputText} />
+        </View>
+        <TextInput
+          style={styles.searchInput}
+          placeholderTextColor={UiColors.dark.inputText}
+          onFocus={onTextInputFocus}
+          onBlur={onTextInputBlur}
+          placeholder="Search"
+        />
       </View>
-    )
-  }
-}
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -81,7 +84,7 @@ const styles = StyleSheet.create({
     paddingVertical: UiSizes[Platform.OS].searchInputContainerPadding,
     flexDirection: 'row',
     alignItems: 'flex-start',
-    zIndex: 1
+    zIndex: 1,
   },
   iconContainer: {
     height: '100%',
@@ -92,8 +95,8 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 5,
     borderTopLeftRadius: 5,
   },
-  searchInput:{
-    flex: 1, 
+  searchInput: {
+    flex: 1,
     height: '100%',
     backgroundColor: UiColors.dark.inputBackground,
     color: UiColors.dark.hightEmphasis,
@@ -106,8 +109,8 @@ const styles = StyleSheet.create({
       },
       android: {
         paddingRight: 5,
-      }
-    })    
+      },
+    }),
   },
   cancelContainer: {
     position: 'absolute',
@@ -119,7 +122,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     zIndex: 3,
-    backgroundColor: UiColors.dark.bars
+    backgroundColor: UiColors.dark.bars,
   },
   inputRightPadding: {
     height: '100%',
@@ -127,11 +130,13 @@ const styles = StyleSheet.create({
     backgroundColor: UiColors.dark.inputBackground,
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
-    marginRight: UiSizes[Platform.OS].searchInputContainerPadding
+    marginRight: UiSizes[Platform.OS].searchInputContainerPadding,
   },
   cancelText: {
     fontFamily: 'Nunito-Regular',
     fontSize: UiSizes[Platform.OS].searchInputFontSize,
-    color: UiColors.dark.primary
-  }
+    color: UiColors.dark.primary,
+  },
 });
+
+export default SearchTextInput;

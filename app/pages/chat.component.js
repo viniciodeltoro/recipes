@@ -1,35 +1,26 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 
 const styles = StyleSheet.create({
-  background:{
+  background: {
     backgroundColor: 'gray',
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1
+    flex: 1,
   },
 
-  title:{
+  title: {
     fontSize: 20,
-    color: '#000000'
-  }
+    color: '#000000',
+  },
 });
 
-export default class Chat extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
+const Chat = () => {
+  return (
+    <View style={styles.background}>
+      <Text style={styles.title}>Chat page</Text>
+    </View>
+  );
+};
 
-  render(){
-    return (
-      <View style={styles.background}>
-        <Text style={styles.title}>Chat page</Text>
-     </View>    
-    );
-  }
-}
+export default Chat;

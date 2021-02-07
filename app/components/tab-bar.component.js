@@ -1,57 +1,54 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  TouchableOpacity,
-  Platform
-} from 'react-native';
+import {StyleSheet, View, TouchableOpacity, Platform} from 'react-native';
 import FAIcon from 'react-native-vector-icons/FontAwesome5';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UiSizes} from '../helpers/ui-sizes';
 import {UiColors} from '../helpers/ui-colors';
 
-const totalTabBarHeight = UiSizes[Platform.OS].tabBarHeight +
-  UiSizes[Platform.OS].homeIndicatorHeight;
+const totalTabBarHeight =
+  UiSizes[Platform.OS].tabBarHeight + UiSizes[Platform.OS].homeIndicatorHeight;
 
 const styles = StyleSheet.create({
-  background:{
+  background: {
     backgroundColor: UiColors.dark.bars,
     paddingBottom: UiSizes[Platform.OS].homeIndicatorHeight,
     height: totalTabBarHeight,
     flexDirection: 'row',
     borderTopWidth: 0.7,
-    borderColor: UiColors.dark.line 
+    borderColor: UiColors.dark.line,
   },
-  iconContainer:{
+  iconContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1
-  }
+    flex: 1,
+  },
 });
 
-export default class TabBar extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
-
-  render(){
-    const getIcon = (label, isFocused) =>{
-      if(label === 'Search' || label === 'User'){
-        return <FAIcon name={label.toLowerCase()}
-        size={UiSizes[Platform.OS].tabBarIconHeight}
-        color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}/>
-      } else{
-        return <MCIcon name={label.toLowerCase()}
-        size={UiSizes[Platform.OS].tabBarIconHeight}
-        color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}/>
-      }
+const TabBar = props => {
+  const getIcon = (label, isFocused) => {
+    if (label === 'Search' || label === 'User') {
+      return (
+        <FAIcon
+          name={label.toLowerCase()}
+          size={UiSizes[Platform.OS].tabBarIconHeight}
+          color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}
+        />
+      );
+    } else {
+      return (
+        <MCIcon
+          name={label.toLowerCase()}
+          size={UiSizes[Platform.OS].tabBarIconHeight}
+          color={isFocused ? UiColors.dark.primary : UiColors.dark.disabledIcon}
+        />
+      );
     }
+  };
 
-    return (
-      <View style={styles.background}>
-      {this.props.state.routes.map((route, index) => {
-        const { options } = this.props.descriptors[route.key];
+  return (
+    <View style={styles.background}>
+      {props.state.routes.map((route, index) => {
+        const {options} = props.descriptors[route.key];
         const label =
           options.tabBarLabel !== undefined
             ? options.tabBarLabel
@@ -59,21 +56,21 @@ export default class TabBar extends React.Component {
             ? options.title
             : route.name;
 
-        const isFocused = this.props.state.index === index;
+        const isFocused = props.state.index === index;
 
         const onPress = () => {
-          const event = this.props.navigation.emit({
+          const event = props.navigation.emit({
             type: 'tabPress',
             target: route.key,
           });
 
           if (!isFocused && !event.defaultPrevented) {
-            this.props.navigation.navigate(route.name);
+            props.navigation.navigate(route.name);
           }
         };
 
         const onLongPress = () => {
-          this.props.navigation.emit({
+          props.navigation.emit({
             type: 'tabLongPress',
             target: route.key,
           });
@@ -89,12 +86,12 @@ export default class TabBar extends React.Component {
             onPress={onPress}
             onLongPress={onLongPress}
             style={styles.iconContainer}>
-            
             {getIcon(label, isFocused)}
-          </TouchableOpacity>  
+          </TouchableOpacity>
         );
       })}
-    </View>      
-    );
-  }
-}
+    </View>
+  );
+};
+
+export default TabBar;
