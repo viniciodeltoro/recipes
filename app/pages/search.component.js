@@ -4,6 +4,7 @@ import SearchListItem from '../components/search-list-item.component';
 import SearchTextInput from '../components/search-text-input.component';
 import {UiSizes} from '../helpers/ui-sizes';
 import {UiColors} from '../helpers/ui-colors';
+import axios from 'axios';
 
 const largeTitleBarHeight = UiSizes[Platform.OS].largeTitleBarHeight;
 const headerHeight =
@@ -98,7 +99,21 @@ const styles = StyleSheet.create({
   },
 });
 
-const Search = props => {
+const Search = (props) => {
+  const getData = () => {
+    axios
+      .get('http://192.168.1.24:3000/restaurantss')
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log('hitting catch section');
+        console.log(error);
+      });
+  };
+
+  getData();
+
   const scrollY = new Animated.Value(0);
   return (
     <View style={styles.background}>
@@ -177,16 +192,3 @@ const Search = props => {
 };
 
 export default Search;
-
-  /*getData(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-    .then((json) => {
-      this.setState({
-        exampleData: json
-      });
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-  }*/
