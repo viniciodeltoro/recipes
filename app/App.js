@@ -1,7 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import AppState from './states/app.state';
-import AppStateContext from './states/app.state.context';
+import {AppStateContext, appState} from './states/app.state.context';
 import {View, StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -28,7 +27,7 @@ const TheTabNavigation = () => {
 
 const App = () => {
   return (
-    <AppStateContext.Provider>
+    <AppStateContext.Provider value={appState}>
       <View style={{flex: 1}}>
         <StatusBar
           barStyle="light-content"

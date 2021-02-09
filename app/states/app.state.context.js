@@ -1,6 +1,7 @@
 import {createContext} from 'react';
 import AppState from './app.state';
 
-const AppStateContext = createContext(new AppState({}));
+const appState = new AppState({});
 
-export default AppStateContext;
+const AppStateContext = createContext(appState);
+export {AppStateContext, appState};

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {AppStateContext} from '../states/app.state.context';
 import {View, Platform, StyleSheet, Text, Animated} from 'react-native';
 import SearchListItem from '../components/search-list-item.component';
 import SearchTextInput from '../components/search-text-input.component';
@@ -100,26 +101,32 @@ const styles = StyleSheet.create({
 });
 
 const Search = (props) => {
-  const getData = async () => {
-    /*axios
-      .get('http://192.168.1.20:3000/restaurants')
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log('hitting catch section');
-        console.log(error);
-      });*/
+  const appState = useContext(AppStateContext);
+  appState.setSession({
+    id: '123',
+    createdAt: 'today',
+    expiresAt: 'in a month',
+    username: 'viniciodeltoro',
+    fullName: 'Vinicio Del Toro',
+  });
+  const getData = async (username, password) => {
+    const requestData = {
+      method: 'post',
+      url: 'http://192.168.1.20:3000/session',
+      data: {
+        username: username,
+        password: password,
+      },
+    };
     try {
-      const response = await axios.get('http://192.168.1.20:3000/restaurants');
+      const response = await axios.post(requestData);
       console.log(response.data);
     } catch (error) {
-      console.log('hitting catch section');
       console.log(error);
     }
   };
 
-  getData();
+  getData('viniciodeltoro1', 'password');
 
   const scrollY = new Animated.Value(0);
   return (

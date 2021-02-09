@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import ItemSeparator from '../components/item-separator.component';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 import OctIcon from 'react-native-vector-icons/Octicons';
+import {AppStateContext} from '../states/app.state.context';
+import {observer} from 'mobx-react';
 
 const styles = StyleSheet.create({
   background: {
@@ -60,7 +62,8 @@ const styles = StyleSheet.create({
   },
 });
 
-const UserProfile = () => {
+const UserProfile = observer(() => {
+  const appState = useContext(AppStateContext);
   return (
     <View style={styles.background}>
       <Image
@@ -73,8 +76,8 @@ const UserProfile = () => {
           style={styles.photo}
           source={require('../assets/images/me.jpg')}
         />
-        <Text style={styles.name}>Vinicio Del Toro</Text>
-        <Text style={styles.username}>@viniciodeltoro</Text>
+        <Text style={styles.name}>{appState.getSession.sessionFullName}</Text>
+        <Text style={styles.username}>{appState.getSession.username}</Text>
       </View>
       <View>
         <ItemSeparator />
@@ -157,6 +160,6 @@ const UserProfile = () => {
       </View>
     </View>
   );
-};
+});
 
 export default UserProfile;

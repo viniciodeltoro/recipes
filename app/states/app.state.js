@@ -12,4 +12,8 @@ export default class AppState {
   get getSession() {
     return this.session;
   }
+
+  setSession(data) {
+    this.session = new SessionSate(data);
+  }
 }
