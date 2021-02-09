@@ -4967,6 +4967,23 @@
   dependencies:
     "minimist" "^1.2.5"
 
+"mobx-react-lite@^3.2.0":
+  "integrity" "sha512-q5+UHIqYCOpBoFm/PElDuOhbcatvTllgRp3M1s+Hp5j0Z6XNgDbgqxawJ0ZAUEyKM8X1zs70PCuhAIzX1f4Q/g=="
+  "resolved" "https://registry.npmjs.org/mobx-react-lite/-/mobx-react-lite-3.2.0.tgz"
+  "version" "3.2.0"
+
+"mobx-react@^7.1.0":
+  "integrity" "sha512-DxvA6VXmnZ+N9f/UTtolWtdRnAAQY2iHWTSPLktfpj8NKlXUe4dabBAjuXrBcZUM8GjLWnxD1ZEjssXq1M0RAw=="
+  "resolved" "https://registry.npmjs.org/mobx-react/-/mobx-react-7.1.0.tgz"
+  "version" "7.1.0"
+  dependencies:
+    "mobx-react-lite" "^3.2.0"
+
+"mobx@^6.1.0", "mobx@^6.1.5":
+  "integrity" "sha512-BsVAHEk/Ty+6BmCis0CUvA7E9u5aJpUkdRM91YwBt4lVha4heDLjRT43z2pqENeFuVZPfA1RRaf7sRcqRB2i4Q=="
+  "resolved" "https://registry.npmjs.org/mobx/-/mobx-6.1.5.tgz"
+  "version" "6.1.5"
+
 "ms@2.0.0":
   "integrity" "sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g="
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
@@ -5699,7 +5716,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.0", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@16.13.1":
+"react@*", "react@^16.0", "react@^16.13.1", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@16.13.1":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   "version" "16.13.1"

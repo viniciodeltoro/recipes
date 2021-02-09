@@ -100,16 +100,23 @@ const styles = StyleSheet.create({
 });
 
 const Search = (props) => {
-  const getData = () => {
-    axios
-      .get('http://192.168.1.24:3000/restaurantss')
+  const getData = async () => {
+    /*axios
+      .get('http://192.168.1.20:3000/restaurants')
       .then((response) => {
         console.log(response.data);
       })
       .catch((error) => {
         console.log('hitting catch section');
         console.log(error);
-      });
+      });*/
+    try {
+      const response = await axios.get('http://192.168.1.20:3000/restaurants');
+      console.log(response.data);
+    } catch (error) {
+      console.log('hitting catch section');
+      console.log(error);
+    }
   };
 
   getData();
