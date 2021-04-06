@@ -1,5 +1,5 @@
 export const UiSizes = {
-  'ios':{
+  ios: {
     statusBarHeight: 44,
     largeTitleBarHeight: 52,
     largeTitleFontSize: 34,
@@ -11,9 +11,9 @@ export const UiSizes = {
     homeIndicatorHeight: 34,
     searchInputContainerHeight: 51,
     searchInputContainerPadding: 8,
-    searchInputFontSize: 17
+    searchInputFontSize: 17,
   },
-  'android':{
+  android: {
     statusBarHeight: 0,
     largeTitleBarHeight: 50,
     largeTitleFontSize: 34,
@@ -25,6 +25,6 @@ export const UiSizes = {
     homeIndicatorHeight: 0,
     searchInputContainerHeight: 55,
     searchInputContainerPadding: 8,
-    searchInputFontSize: 16
-  }
-}
+    searchInputFontSize: 16,
+  },
+};

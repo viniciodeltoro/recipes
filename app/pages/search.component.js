@@ -1,11 +1,10 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {AppStateContext} from '../states/app.state.context';
 import {View, Platform, StyleSheet, Text, Animated} from 'react-native';
 import SearchListItem from '../components/search-list-item.component';
 import SearchTextInput from '../components/search-text-input.component';
 import {UiSizes} from '../helpers/ui-sizes';
 import {UiColors} from '../helpers/ui-colors';
-import axios from 'axios';
 
 const largeTitleBarHeight = UiSizes[Platform.OS].largeTitleBarHeight;
 const headerHeight =
@@ -102,31 +101,6 @@ const styles = StyleSheet.create({
 
 const Search = (props) => {
   const appState = useContext(AppStateContext);
-  appState.setSession({
-    id: '123',
-    createdAt: 'today',
-    expiresAt: 'in a month',
-    username: 'viniciodeltoro',
-    fullName: 'Vinicio Del Toro',
-  });
-  const getData = async (username, password) => {
-    const requestData = {
-      method: 'post',
-      url: 'http://192.168.1.20:3000/session',
-      data: {
-        username: username,
-        password: password,
-      },
-    };
-    try {
-      const response = await axios.post(requestData);
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  getData('viniciodeltoro1', 'password');
 
   const scrollY = new Animated.Value(0);
   return (

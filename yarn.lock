@@ -5644,6 +5644,11 @@
   "resolved" "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz"
   "version" "2.5.6"
 
+"react-native-mmkv@^1.0.6":
+  "integrity" "sha512-SKrn9uYJwR/00200ooc+jF/VAAukXQMZlwcGq3OT6y5VVq5fQRHcKsYRBLZfCjQE2iUDCZOZYTvbYZDmW4XDIw=="
+  "resolved" "https://registry.npmjs.org/react-native-mmkv/-/react-native-mmkv-1.0.6.tgz"
+  "version" "1.0.6"
+
 "react-native-safe-area-context@^3.1.9", "react-native-safe-area-context@>= 0.6.0":
   "integrity" "sha512-wmcGbdyE/vBSL5IjDPReoJUEqxkZsywZw5gPwsVUV1NBpw5eTIdnL6Y0uNKHE25Z661moxPHQz6kwAkYQyorxA=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-3.1.9.tgz"

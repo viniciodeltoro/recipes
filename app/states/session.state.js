@@ -1,38 +1,32 @@
 import {makeAutoObservable} from 'mobx';
 
 export default class SessionState {
-  id = '';
-  createdAt = '';
-  expiresAt = '';
-  username = '';
-  fullName = '';
+  id = null;
+  createdAt = null;
+  expiresAt = null;
+  updatedAt = null;
+  token = null;
 
   constructor(sessionData) {
     makeAutoObservable(this);
+    this.setSession(sessionData);
+  }
+
+  get session() {
+    return {
+      id: this.id,
+      createdAt: this.createdAt,
+      expiresAt: this.expiresAt,
+      updatedAt: this.updatedAt,
+      token: this.token,
+    };
+  }
+
+  setSession(sessionData) {
     this.id = sessionData.id;
-    this.createdAt = sessionData.createdAt || '';
-    this.expiresAt = sessionData.expiresAt || '';
-    this.username = sessionData.username || '';
-    this.fullName = sessionData.fullName || '';
-  }
-
-  get sessionId() {
-    return this.id;
-  }
-
-  get sessionCreatedAt() {
-    return this.createdAt;
-  }
-
-  get sessionExpiresAt() {
-    return this.expiresAt;
-  }
-
-  get sessionUsername() {
-    return this.username;
-  }
-
-  get sessionFullName() {
-    return this.fullName;
+    this.createdAt = new Date(sessionData.createdAt) || null;
+    this.expiresAt = new Date(sessionData.expiresAt) || null;
+    this.updatedAt = new Date(sessionData.updatedAt) || null;
+    this.token = sessionData.token || null;
   }
 }

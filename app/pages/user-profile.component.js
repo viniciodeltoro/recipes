@@ -76,8 +76,8 @@ const UserProfile = observer(() => {
           style={styles.photo}
           source={require('../assets/images/me.jpg')}
         />
-        <Text style={styles.name}>{appState.getSession.sessionFullName}</Text>
-        <Text style={styles.username}>{appState.getSession.username}</Text>
+        <Text style={styles.name}>{appState.getUser.user.name}</Text>
+        <Text style={styles.username}>{appState.getUser.user.username}</Text>
       </View>
       <View>
         <ItemSeparator />
