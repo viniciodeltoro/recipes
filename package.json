@@ -18,7 +18,7 @@
     "mobx": "^6.1.5",
     "mobx-react": "^7.1.0",
     "react": "16.13.1",
-    "react-native": "^0.63.4",
+    "react-native": "^0.64.1",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-mmkv": "^1.0.6",
